@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# We need three values from ACR Cloud, https://www.acrcloud.com/
+export ACRC_HOST=your_value
+export ACRC_ACCESS_KEY=your_value
+export ACRC_ACCESS_SECRET=your_value
+
+# We need two values from Spotify, https://developer.spotify.com/
+export SPOTIFY_CLIENT_ID=your_value
+export SPOTIFY_CLIENT_SECRET=your_value
