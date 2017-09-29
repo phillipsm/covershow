@@ -1,5 +1,7 @@
-import os, sys, ConfigParser, webbrowser
-import requests, json
+import os, sys, json, webbrowser
+from os import environ
+
+import requests
 import sounddevice as sd
 import soundfile as sf
 from acrcloud.recognizer import ACRCloudRecognizer
@@ -38,7 +40,7 @@ def identify_sample():
         'host': ACRC_HOST,
         'access_key':ACRC_ACCESS_KEY,
         'access_secret': ACRC_ACCESS_SECRET,
-        'timeout':10 # seconds
+        'timeout':8 # seconds
     }
 
     re = ACRCloudRecognizer(config)
@@ -76,6 +78,6 @@ def find_art(album_id):
 
 sched = BlockingScheduler()
 
-sched.add_job(record_sample, 'interval', seconds=7)
+sched.add_job(record_sample, 'interval', seconds=10)
 
 sched.start()
