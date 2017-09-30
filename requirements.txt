@@ -6,7 +6,6 @@ funcsigs==1.0.2
 futures==3.1.1
 idna==2.6
 numpy==1.13.3
-pyacrcloud==1.0.0
 pycparser==2.18
 pytz==2017.2
 requests==2.18.4
