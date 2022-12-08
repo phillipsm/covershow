@@ -1,5 +1,5 @@
 APScheduler==3.3.1
-certifi==2017.7.27.1
+certifi==2022.12.7
 cffi==1.11.0
 chardet==3.0.4
 funcsigs==1.0.2
